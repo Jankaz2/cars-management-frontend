@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #181a1b;
+    color: #fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/car-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/*--- NAVIGATION ---*/
+.logo {
+    float: left;
+    display: inline-block;
+    font-size: 200%;
+    font-weight: 700;
+    color: #fff !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: none !important;
+    margin-top: 43px;
+    margin-left: 40px;
+}
+
+.top-nav {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+.fa-bars,
+ol {
+    float: right;
+    list-style-type: none;
+    margin-top: 55px;
+}
+
+.fa-bars,
+ol li {
+    float: left;
+    margin-right: 40px;
+}
+
+ol a {
+    display: block;
+    z-index: 10000;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited {
+    padding: 8px 0 8px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+}
+
+.top-nav li a:hover,
+.top-nav li a:active {
+    border-bottom: 2px solid #555
+}
+
+.options-btn {
+    text-align: center;
+}
+
+.options-btn:link,
+.options-btn:visited {
+    background-color: #a02010;
+    padding: 10px 0 !important;
+    width: 120px !important;
+    border: none !important;
+}
+
+.options-btn:hover,
+.options-btn:active {
+    background-color: #a93010;
+    cursor: pointer;
+}
+
+ol ul li {
+    float: none;
+    list-style-type: none;
+    margin-right: 0 !important;
+}
+
+ol ul li a {
+    text-align: center;
+    z-index: 10000;
+}
+
+.top-nav.sticky ol li:hover ul li a,
+.top-nav.sticky ol li:active ul li a {
+    background-color: #c23616;
+    color: #fff !important;
+    border: 1px solid #a02010 !important;
+    display: block !important;
+}
+
+.top-nav.sticky ol li:hover ul li a:hover,
+.top-nav.sticky ol li:active ul li a:active {
+    background-color: #a02010;
+    border: 1px solid #a93010 !important;
+    display: block !important;
+}
+
+
+ol ul li a:link,
+ol ul li a:visited {
+    background-color: #181a1b;
+    padding: 10px 10px !important;
+    border: none !important;
+    width: 120px !important;
+    z-index: 1000;
+    display: none !important;
+}
+
+ol li:hover ul li a,
+ol li:active ul li a {
+    display: block !important;
+}
+
+ol li ul li a:hover,
+ol li ul li a:active {
+    background-color: #a93010;
+    transition: background-color .2s;
+}
+
+.fa-bars {
+    margin-top: 50px;
+    display: block;
+    float: right;
+    opacity: 0;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+.hamburger-nav {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+.hamburger-nav a {
+    border-top: 1px solid #111;
+    padding: 10px 0 10px 0;
+}
+
+.hamburger-nav a,
+.hamburger-nav .options-hamburger a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+}
+
+.hamburger-nav a:hover {
+    color: #fff;
+    background-color: #111;
+    transition: background-color .2s;
+}
+
+.hamburger-nav .options-hamburger a:visited,
+.hamburger-nav .options-hamburger a:link {
+    background-color: #c23616;
+    color: #fff;
+}
+
+.hamburger-nav .options-hamburger a:active,
+.hamburger-nav .options-hamburger a:hover {
+    background-color: #a02010 !important;
+}
+
+.options-hamburger {
+    display: none;
+}
+
+.options-hamburger-btn:link,
+.options-hamburger-btn:visited {
+    background-color: #a02010 !important;
+    color: #fff;
+}
+
+.options-hamburger-btn:hover,
+.options-hamburger-btn:active {
+    background-color: #e84118 !important;
+}
