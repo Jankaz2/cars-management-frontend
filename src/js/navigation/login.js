@@ -1,5 +1,5 @@
 export default class LoginBox {
-    static showLogin() {
+    static #showLogin() {
         const loginBtn = document.querySelector('.login-btn')
         const loginBox = document.querySelector('.login-box');
         loginBtn.addEventListener('click', (e) => {
@@ -23,7 +23,7 @@ export default class LoginBox {
         })
     }
 
-    static showRegistry() {
+    static #showRegistry() {
         const registryBtn = document.querySelector('.registry-btn');
         const registryBox = document.querySelector('.registry-box');
 
@@ -35,5 +35,10 @@ export default class LoginBox {
             }
             e.preventDefault()
         });
+    }
+
+    static showLoginAndRegistry() {
+        LoginBox.#showRegistry()
+        LoginBox.#showLogin()
     }
 }
