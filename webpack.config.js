@@ -34,11 +34,7 @@ module.exports = {
             },
             {
                 test: /\.(css|scss)$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             }
         ]
     },
@@ -58,8 +54,7 @@ module.exports = {
         //new CleanWebpackPlugin(),
 
         new MiniCssExtractPlugin({
-            filename: 'name.css',
-            chunkFilename: '[id].css'
+            filename: './css/[name].css'
         }),
 
         new CopyWebpackPlugin({
