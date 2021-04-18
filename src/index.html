@@ -74,5 +74,59 @@
         </h1>
     </div>
 </header>
+<main>
+    <section class="table-text-section">
+        <div class="row">
+            <h2>SEARCH YOUR FAVOURITE CAR!</h2>
+            <p>There is list of all our vehicles below. You can find your favourite one
+                and manage this. Complete all of input fields and check if there is any car
+                you are looking for.<br>Good luck!</p>
+        </div>
+    </section>
+    <section class="table-search-section" id="search-container-id">
+        <div class="row search-container">
+            <form>
+                <div class="wrapper">
+                    <div class="model-price-color-search">
+                        <div class="model">
+                            <p>Car model</p>
+                            <input id="model-search" type="search" placeholder="Car model">
+                        </div>
+                        <div class="price-range">
+                            <p>Price range</p>
+                            <input id="price-from" type="search" placeholder="Minimum price">
+                            <input id="price-to" type="search" placeholder="Maximum price">
+                        </div>
+                        <div class="color">
+                            <p>Color</p>
+                            <input id="color-search" type="search" placeholder="Color">
+                        </div>
+                    </div>
+                    <div class="mileage-components-search">
+                        <div class="components">
+                            <p>Components</p>
+                            <input id="components-search" type="search" placeholder="Components">
+                        </div>
+                        <div class="mileage-range">
+                            <p>Mileage range</p>
+                            <input id="mileage-from" type="search" placeholder="Minimum mileage">
+                            <input id="mileage-to" type="search" placeholder="Maximum mileage">
+                        </div>
+                        <div class="search-sort-box">
+                            <br>
+                            <select class="select-box">
+                                <option value="model">MODEL</option>
+                                <option value="price">PRICE</option>
+                                <option value="mileage">MILEAGE</option>
+                                <option value="color">COLOR</option>
+                            </select>
+                            <input class="submit-button" type="submit" value="SEARCH">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="cars-table-box"></div>
+        </div>
+    </section>
 </body>
 </html>

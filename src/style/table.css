@@ -1,0 +1,47 @@
+.cars-table-box{
+    padding: 15px;
+    display: block;
+}
+
+.comparison-table {
+    padding-top: 30px !important;
+    margin-top: 30px !important;
+}
+
+.cars-table{
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.cars-table-header {
+    margin-bottom: 10px;
+}
+
+.cars-table-header-row {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #a02010;
+}
+
+.cars-table-header-row:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.050);
+}
+
+.cars-table-body-row:hover {
+    background-color: #a93010;
+    color: #fff !important;
+}
+
+.cars-table tr td {
+    height: 25px;
+    padding: 5px 0;
+    color: #111;
+}
+
+table, tr, td {
+    border: 1px solid #111;
+}

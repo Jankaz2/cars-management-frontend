@@ -417,3 +417,116 @@ textarea {
     display: inline-block;
     line-height: 1em;
 }
+
+
+/*--- SEARCH CONTAINER ---*/
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.table-text-section p {
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.table-search-section {
+    margin: 60px 0 60px 0;
+    background-color: #fff;
+    border: 1px solid #000 !important;
+}
+
+.table-search-section p {
+    color: #111;
+}
+
+.search-container {
+    display: block;
+    width: 80%;
+    padding: 40px 0 40px 0;
+}
+
+.search-container form {
+    width: 80%;
+    padding: 0 0 0 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.search-container input[type=search],
+.search-container input[type=submit],
+.grouped input[type=submit] {
+    box-shadow: inset 0px 0px 0px 0px red;
+    padding: 10px 10px;
+    color: #111;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #111;
+    width: 200px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+select {
+    box-shadow: inset 0px 0px 0px 0px red;
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-right: 3px !important;
+}
+
+.search-sort-box {
+    width: 200px;
+}
+
+.select-box {
+    box-shadow: inset 0px 0px 0px 0px red;
+    color: #111;
+    width: 92px !important;
+}
+
+.model-price-color-search,
+.mileage-components-search,
+.comparison-nav,
+.search-container button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+
+.submit-button {
+    border-radius: 5px;
+    background-color: #a02010 !important;
+    color: #fff !important;
+    border: none !important;
+    width: 92px !important;
+    padding: 10px 8px;
+    margin-right: 0px !important;
+    text-align: center !important;
+    text-transform: uppercase;
+    outline: none;
+    transition: background-color .2s, border .2s, color .2s;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    background-color: #a93010 !important;
+    cursor: pointer;
+}
+
+.wrapper p {
+    text-align: left !important;
+}
