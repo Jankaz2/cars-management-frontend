@@ -291,6 +291,43 @@ ol li ul li a:active {
     border: 1px solid #000 !important;
     color: #000;
 }
+
+/*--- STICKY NAV ---*/
+.top-nav.sticky {
+    background-color: #fff !important;
+    border-bottom: 1px #000 solid;
+    z-index: 100;
+}
+
+.top-nav.sticky .logo,
+.top-nav.sticky ol li a {
+    color: #000 !important;
+    z-index: 100;
+}
+
+.top-nav.sticky .options-btn {
+    color: white !important;
+}
+
+.top-nav.sticky ol li:hover ul li a,
+.top-nav.sticky ol li:active ul li a {
+    background-color: #c23616;
+    color: #fff !important;
+    border: 1px solid #a02010 !important;
+    display: block !important;
+}
+
+.top-nav.sticky ol li:hover ul li a:hover,
+.top-nav.sticky ol li:active ul li a:active {
+    background-color: #a02010;
+    border: 1px solid #a93010 !important;
+    display: block !important;
+}
+
+.top-nav.sticky .fa-bars {
+    color: #111;
+}
+
 /*--- LOGIN ---*/
 .login-box,
 .registry-box {
