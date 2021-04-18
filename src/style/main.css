@@ -209,3 +209,80 @@ ol li ul li a:active {
 .options-hamburger-btn:active {
     background-color: #e84118 !important;
 }
+
+
+/*--- LOGIN ---*/
+.login-box,
+.registry-box {
+    position: fixed;
+    top: 100px;
+    float: right;
+    right: 0;
+    margin-right: 40px;
+    padding: 20px 20px 15px 20px;
+    background-color: #fff;
+    max-width: 240px;
+    display: none;
+}
+
+.login-box input[type=text],
+.login-box input[type=password],
+.registry-box input[type=text],
+.registry-box input[type=password],
+.registry-box input[type=number],
+.registry-box input[type=email],
+.log-in-hamburger-box input[type=text],
+.log-in-hamburger-box input[type=password]{
+    padding: 10px;
+    border: 1px solid #201c1c;
+    width: 200px;
+    background-color: whitesmoke;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-box input[type=text]:focus,
+.login-box input[type=password]:focus,
+.registry-box input[type=text]:focus,
+.registry-box input[type=password]:focus,
+.registry-box input[type=number]:focus,
+.registry-box input[type=email]:focus,
+.log-in-hamburger-box input[type=text]:focus,
+.log-in-hamburger-box input[type=password]:focus {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+    box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+    border: 1px solid #a5cda5;
+    background-color: #e9f3e9;
+    color: #428c42;
+}
+
+.log-in-button {
+    background-color: #4cd137;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    width: 200px;
+    transition: background-color .2s;
+}
+
+.log-in-button:hover,
+.log-in-button:active {
+    cursor: pointer;
+    background-color: #44bd32;
+}
+
+.log-in-hamburger-box {
+    display: none;
+}
+
+.log-in-hamburger-box a {
+    border: none !important;
+}
+
+.log-in-hamburger-box a:hover {
+    background-color: #fff;
+    color: #000;
+}
