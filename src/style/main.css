@@ -23,6 +23,64 @@ header {
     background-attachment: fixed;
 }
 
+/* --- HEADINGS ---*/
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color .2s, border .2s, color .2s;
+}
+
+input[type="submit"] {
+    background-color: #e84118;
+    border: 1px solid #e84118;
+    color: #fff;
+    margin-right: 20px;
+}
+
+input[type="submit"] {
+    border: 1px solid #e84118;
+    color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #c23616;
+}
+
 /*--- NAVIGATION ---*/
 .logo {
     float: left;
@@ -210,7 +268,29 @@ ol li ul li a:active {
     background-color: #e84118 !important;
 }
 
+.dark-mode-switcher {
+    background-color: #000;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 300;
+    float: left;
+    margin: 50px 0 0 40px;
+}
 
+.dark-mode-switcher:hover,
+.dark-mode-switcher:active {
+    background-color: #222333;
+    cursor: pointer;
+}
+
+.dark-mode-switcher.light {
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    color: #000;
+}
 /*--- LOGIN ---*/
 .login-box,
 .registry-box {
@@ -285,4 +365,13 @@ ol li ul li a:active {
 .log-in-hamburger-box a:hover {
     background-color: #fff;
     color: #000;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }
