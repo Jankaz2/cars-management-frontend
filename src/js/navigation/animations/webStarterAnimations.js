@@ -1,5 +1,5 @@
-export class Animations {
-    static textAnimation1() {
+export default class Animations {
+    static #textAnimation1() {
         const text1 = `Manage your cars collection.`
         const splitted = text1.split("");
         const letters = document.querySelector('.letters1');
@@ -10,7 +10,7 @@ export class Animations {
         })();
     }
 
-    static textAnimation2() {
+    static #textAnimation2() {
         const text2 = `Get statistics.`;
         const letters = document.querySelector('.letters2');
         const splitted2 = text2.split("");
@@ -32,5 +32,10 @@ export class Animations {
             }
         };
         window.requestAnimationFrame(step);
+    }
+
+    static showAnimations() {
+        this.#textAnimation1();
+        this.#textAnimation2();
     }
 }
