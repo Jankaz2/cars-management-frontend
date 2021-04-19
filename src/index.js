@@ -9,6 +9,7 @@ import TableAnimations from "./js/table_operations/sortCars";
 import {showDataForCars} from "./js/data/showData";
 import StickyNav from "./js/navigation/animations/stickyNav";
 import CreateStats from "./js/creator/createStats";
+import FilterCars from "./js/data/filterCarsData";
 
 showDataForCars('');
 LoginBox.showLoginAndRegistry()
@@ -16,3 +17,4 @@ Animations.showAnimations()
 TableAnimations.sortCars()
 StickyNav.useNavigationStickyAndHamburger()
 CreateStats.showStats()
+FilterCars.filterCarsByBtn()
