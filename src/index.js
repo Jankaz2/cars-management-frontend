@@ -12,6 +12,7 @@ import StickyNav from "./js/navigation/animations/stickyNav";
 import CreateStats from "./js/creator/createStats";
 import FilterCars from "./js/data/filterCarsData";
 import ComparisonTableFunctions from "./js/creator/createComparisonTable";
+import slider from "./js/creator/sliderCrator";
 
 showDataForCars('');
 LoginBox.showLoginAndRegistry()
@@ -21,3 +22,4 @@ StickyNav.useNavigationStickyAndHamburger()
 CreateStats.showStats()
 FilterCars.filterCarsByBtn()
 ComparisonTableFunctions.allComparisonFunctions()
+slider()
