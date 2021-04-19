@@ -1,4 +1,5 @@
-.cars-table-box{
+.cars-table-box
+.comparison-box {
     padding: 15px;
     display: block;
 }
@@ -8,7 +9,8 @@
     margin-top: 30px !important;
 }
 
-.cars-table{
+.cars-table,
+.comparison-table {
     padding: 0;
     border-collapse: collapse;
     width: 100%;
@@ -16,27 +18,36 @@
     text-align: center;
 }
 
-.cars-table-header {
+.comparison-table {
+    width: 80%;
+}
+
+.cars-table-header,
+.comparison-table-header {
     margin-bottom: 10px;
 }
 
-.cars-table-header-row {
+.cars-table-header-row,
+.comparison-table-header-row {
     color: black;
     font-weight: bold;
     margin-bottom: 10px;
     background-color: #a02010;
 }
 
-.cars-table-header-row:nth-child(odd) {
+.cars-table-header-row:nth-child(odd),
+.comparison-table-header-row:nth-child(odd) {
     background-color: rgba(128, 128, 128, 0.050);
 }
 
-.cars-table-body-row:hover {
+.cars-table-body-row:hover,
+.comparison-table-body-row:hover {
     background-color: #a93010;
     color: #fff !important;
 }
 
-.cars-table tr td {
+.cars-table tr td,
+.comparison-table tr td {
     height: 25px;
     padding: 5px 0;
     color: #111;

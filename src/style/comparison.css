@@ -1,0 +1,53 @@
+.comparison-container {
+    padding-top: 20px !important;
+    color: #fff;
+    margin: auto;
+    display: block;
+}
+
+.comparison-nav ol {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.comparison-nav ol li a {
+    text-align: center;
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.comparison-nav ol li a:link,
+.comparison-nav ol li a:visited {
+    color: #111;
+    padding: 10px 10px !important;
+    width: auto;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+}
+
+.comparison-nav ol li a:hover,
+.comparison-nav ol li a:active {
+    border-bottom: 2px solid #111;
+}
+
+.comparison-container-section {
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+
+.comparison-table {
+    width: 60% !important;
+}
+
+/*
+.comparison-nav {
+   position: ;
+}
+*/
+
+.comparison-container-text-section h2 {
+    color: #111;
+    padding-top: 40px;
+}
