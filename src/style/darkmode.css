@@ -1,0 +1,90 @@
+.table-search-section.darkmode,
+.comparison-container-section.darkmode {
+    background-color: #201c1c !important;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+.comparison-container-section.darkmode .comparison-table-header-row,
+.table-search-section.darkmode .cars-table-header-row {
+    color: whitesmoke !important;
+}
+
+.table-search-section.darkmode .search-container input[type=search] {
+    background-color: #201c1c !important;
+    color: whitesmoke !important;
+    border: 1px solid whitesmoke !important;
+}
+
+.top-nav.darkmode .fa-bars {
+    color: whitesmoke !important;
+}
+
+.top-nav.sticky.darkmode {
+    background-color: #201c1c !important;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.top-nav.sticky.darkmode .logo,
+.top-nav.sticky.darkmode ol li a {
+    color: whitesmoke !important;
+}
+
+.table-search-section.darkmode table, tr, td {
+    border: 1px solid #2f3640 !important;
+    color: white;
+}
+
+.table-search-section.darkmode form p {
+    color: whitesmoke !important;
+}
+
+.comparison-container-section.darkmode tr td,
+.table-search-section.darkmode tr td {
+    color: whitesmoke !important;
+}
+
+.comparison-container-section.darkmode h2 {
+    color: whitesmoke !important;
+}
+
+.comparison-container-section.darkmode .comparison-nav a {
+    color: whitesmoke !important;
+}
+
+.comparison-container-section.darkmode .comparison-nav a:hover,
+.comparison-container-section.darkmode .comparison-nav a:active {
+    border-bottom: 1px solid whitesmoke !important;
+}
+
+.slider.darkmode {
+    border-top: 1px solid whitesmoke;
+    background-color: #201c1c;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.slider.darkmode h1,
+.slider.darkmode h3 {
+    color: whitesmoke !important;
+}
+
+.slider.darkmode .slider-btn-left,
+.slider.darkmode .slider-btn-right {
+    color: whitesmoke !important;;
+    background-color: #201c1c !important;
+}
+
+.slider.darkmode .dots-dot-active {
+    background-color: whitesmoke !important;
+}
+
+.section-contact.darkmode input,
+.section-contact.darkmode textarea {
+    background-color: #201c1c !important;
+    color: whitesmoke !important;
+    border: 1px solid whitesmoke !important;
+}
+
+.section-contact input[type=submit]:hover {
+    background-color: #000 !important;
+}
