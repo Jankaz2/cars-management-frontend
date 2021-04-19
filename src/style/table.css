@@ -1,4 +1,4 @@
-.cars-table-box
+.cars-table-box,
 .comparison-box {
     padding: 15px;
     display: block;
@@ -32,17 +32,11 @@
     color: black;
     font-weight: bold;
     margin-bottom: 10px;
-    background-color: #a02010;
-}
-
-.cars-table-header-row:nth-child(odd),
-.comparison-table-header-row:nth-child(odd) {
-    background-color: rgba(128, 128, 128, 0.050);
 }
 
 .cars-table-body-row:hover,
 .comparison-table-body-row:hover {
-    background-color: #a93010;
+    background-color: #e84118;
     color: #fff !important;
 }
 
@@ -55,4 +49,8 @@
 
 table, tr, td {
     border: 1px solid #111;
+}
+
+tr:nth-child(even) {
+    background-color: #A2A0A0;
 }
