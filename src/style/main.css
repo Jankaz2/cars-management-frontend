@@ -340,6 +340,8 @@ ol li ul li a:active {
     background-color: #fff;
     max-width: 240px;
     display: none;
+    z-index: 100;
+    border: 1px solid #111;
 }
 
 .login-box input[type=text],
