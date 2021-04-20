@@ -4,6 +4,7 @@ import '../style/table.css'
 import '../style/stats.css'
 import '../style/comparison.css'
 import '../style/darkmode.css'
+import '../style/responsive.css'
 
 import LoginBox from "./navigation/login.js";
 import Animations from "./navigation/animations/webStarterAnimations";
@@ -15,6 +16,7 @@ import FilterCars from "./data/filterCarsData";
 import ComparisonTableFunctions from "./creator/createComparisonTable";
 import slider from "./creator/sliderCrator";
 import DarkModeCreator from "./creator/darkModeCreator";
+import HamburgerNavigation from "./navigation/animations/hamburgerNav";
 
 showDataForCars('');
 LoginBox.showLoginAndRegistry()
@@ -26,3 +28,4 @@ FilterCars.filterCarsByBtn()
 ComparisonTableFunctions.allComparisonFunctions()
 slider()
 DarkModeCreator.switchThemeMode()
+HamburgerNavigation.showHamburgerNavOptionsTurnOff()

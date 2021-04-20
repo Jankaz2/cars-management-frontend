@@ -717,3 +717,19 @@ input[type=checkbox] {
 input[type=submit]:hover {
     cursor: pointer;
 }
+
+/*--- ICONS ---*/
+.fa-bars {
+    margin-top: 65px;
+    display: block;
+    float: right;
+    opacity: 0;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+.top-nav.sticky .fa-bars {
+    color: #111;
+}
