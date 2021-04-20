@@ -733,3 +733,92 @@ input[type=submit]:hover {
 .top-nav.sticky .fa-bars {
     color: #111;
 }
+
+/*--- FOOTER ---*/
+footer {
+    background-color: #333;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.socials {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.socials li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.socials li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.socials li a:link,
+.socials li a:visited {
+    text-decoration: none !important;
+    border: 0;
+    color: #888;
+    transition: color .2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+
+.fbicon,
+.twittericon,
+.googleicon,
+.igicon {
+    transition: color .2s;
+}
+
+.fbicon:hover {
+    color: #3b5998;
+}
+
+.twittericon:hover {
+    color: #00aced;
+}
+
+.googleicon:hover {
+    color: #dd4b39;
+}
+
+.igicon:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    margin-top: 30px;
+}
+
+.footer-nav {
+    padding-left: 40px;
+}
+
+.socials {
+    padding-right: 40px;
+}
+
+.sort-btn:hover,
+.sort-btn:active {
+    cursor: pointer;
+}
