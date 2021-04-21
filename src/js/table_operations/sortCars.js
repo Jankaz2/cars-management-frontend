@@ -24,7 +24,7 @@ export default class TableAnimations {
         })
         sortBtn.addEventListener('click', (e) => {
             if (selectBox.value === 'components') {
-                showDataForCars('/COMPONENTS/sort')
+                showDataForCars('/components/sort')
             } else {
                 showDataForCars(`/sort/${selectBox.value.toUpperCase()}/${sortOrderValue}`)
             }
