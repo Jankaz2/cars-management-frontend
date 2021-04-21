@@ -501,7 +501,9 @@ textarea {
 
 .search-container input[type=search],
 .search-container input[type=submit],
-.grouped input[type=submit] {
+.grouped input[type=submit],
+#components-search-1,
+#components-search-2 {
     box-shadow: inset 0px 0px 0px 0px red;
     padding: 10px 10px;
     color: #111;
@@ -543,6 +545,14 @@ select {
     align-items: flex-start;
 }
 
+#components-search-1,
+#components-search-2 {
+    width: 98px;
+}
+
+#components-search-1 {
+    margin-right: 0 !important;
+}
 
 .submit-button {
     position: relative;
@@ -588,7 +598,7 @@ select {
 }
 
 .order-label:hover,
-input[type=radio]:hover{
+input[type=radio]:hover {
     cursor: pointer;
 }
 
