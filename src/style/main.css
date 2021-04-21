@@ -351,7 +351,7 @@ ol li ul li a:active {
 .registry-box input[type=number],
 .registry-box input[type=email],
 .log-in-hamburger-box input[type=text],
-.log-in-hamburger-box input[type=password]{
+.log-in-hamburger-box input[type=password] {
     padding: 10px;
     border: 1px solid #201c1c;
     width: 200px;
@@ -515,22 +515,20 @@ textarea {
 }
 
 select {
-    box-shadow: inset 0px 0px 0px 0px red;
-    width: 100%;
     padding: 10px 10px;
     border: 1px solid #000;
     border-radius: 3px;
-    margin-right: 3px !important;
 }
 
 .search-sort-box {
     width: 200px;
+    margin-left: 6px;
 }
 
 .select-box {
     box-shadow: inset 0px 0px 0px 0px red;
     color: #111;
-    width: 92px !important;
+    width: 90px !important;
 }
 
 .model-price-color-search,
@@ -547,23 +545,29 @@ select {
 
 
 .submit-button {
-    border-radius: 5px;
-    background-color: #a02010 !important;
+    position: relative;
+    display: block;
+    background-color: #d35400 !important;
+    width: 400px !important;
     color: #fff !important;
     border: none !important;
-    width: 92px !important;
-    padding: 10px 8px;
-    margin-right: 0px !important;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center !important;
     text-transform: uppercase;
-    outline: none;
-    transition: background-color .2s, border .2s, color .2s;
 }
 
 .submit-button:hover,
 .submit-button:active {
-    background-color: #a93010 !important;
+    background-color: #a02010 !important;
     cursor: pointer;
+}
+
+#sort-btn {
+    width: 90px;
+    display: inline-block;
+    background-color: #a02010;
+    color: #fff;
 }
 
 .wrapper p {
@@ -781,7 +785,6 @@ footer {
     font-size: 160%;
 }
 
-
 .fbicon,
 .twittericon,
 .googleicon,
@@ -821,4 +824,8 @@ footer p {
 .sort-btn:hover,
 .sort-btn:active {
     cursor: pointer;
+}
+
+a input[type=checkbox] {
+    color: #111111;
 }
