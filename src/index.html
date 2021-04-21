@@ -121,15 +121,22 @@
                             <input id="mileage-to" type="search" placeholder="Maximum mileage">
                         </div>
                         <div class="search-sort-box">
-                            <br>
+                            <p>Sort by</p>
                             <select class="select-box">
                                 <option value="model">MODEL</option>
                                 <option value="price">PRICE</option>
                                 <option value="mileage">MILEAGE</option>
                                 <option value="color">COLOR</option>
+                                <option value="components">COMPONENTS</option>
                             </select>
                             <input id="sort-btn" type="submit" value="SORT">
                         </div>
+                    </div>
+                    <div class="order-by-select-box">
+                        <input type="radio" id="desc" value="descending">
+                        <label class="order-label" for="desc">DESC</label>
+                        <input type="radio" id="asc" value="ascending" checked>
+                        <label class="order-label" for="asc">ASC</label>
                     </div>
                 </div>
             </form>

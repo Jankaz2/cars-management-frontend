@@ -2,26 +2,33 @@ import {showDataForCars} from "../data/showData";
 
 export default class TableAnimations {
     static sortCars() {
-        window.onload = function () {
-            const sortBtn = document.querySelector('.select-box');
+        const selectBox = document.querySelector('.select-box')
+        const sortBtn = document.getElementById('sort-btn')
+        const radioOrderBtnDesc = document.getElementById('desc')
+        const radioOrderBtnAsc = document.getElementById('asc')
+        let sortOrderValue = true
 
-            sortBtn.addEventListener('click', () => {
-                if (sortBtn.value === 'COMPONENTS') {
-                    showDataForCars('/components/sort');
-                }
-                if (sortBtn.value === 'MODEL') {
-                    showDataForCars('/sort/MODEL/true');
-                }
-                if (sortBtn.value === 'PRICE') {
-                    showDataForCars('/sort/PRICE/true');
-                }
-                if (sortBtn.value === 'MILEAGE') {
-                    showDataForCars('/sort/MILEAGE/true');
-                }
-                if (sortBtn.value === 'COLOR') {
-                    showDataForCars('/sort/COLOR/true');
-                }
-            });
-        }
+        radioOrderBtnAsc.addEventListener('click', (e) => {
+            if (radioOrderBtnDesc.checked === true) {
+                radioOrderBtnAsc.checked = true
+                radioOrderBtnDesc.checked = false
+                sortOrderValue = true
+            }
+        })
+        radioOrderBtnDesc.addEventListener('click', (e) => {
+            if (radioOrderBtnAsc.checked === true) {
+                radioOrderBtnDesc.checked = true
+                radioOrderBtnAsc.checked = false
+                sortOrderValue = false
+            }
+        })
+        sortBtn.addEventListener('click', (e) => {
+            if (selectBox.value === 'components') {
+                showDataForCars('/COMPONENTS/sort')
+            } else {
+                showDataForCars(`/sort/${selectBox.value.toUpperCase()}/${sortOrderValue}`)
+            }
+            e.preventDefault()
+        });
     }
 }
