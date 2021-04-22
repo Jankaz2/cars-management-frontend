@@ -41,7 +41,7 @@ export default class ComparisonTableFunctions {
     }
 
     static #createModelTable() {
-        const headers = ['ID', 'Model', 'Cars'];
+        const headers = ['ID', 'Model', 'Price'];
         const comparisonContainer = document.querySelector('div.comparison-box');
 
         while (comparisonContainer.firstChild) comparisonContainer.removeChild(comparisonContainer.firstChild);
@@ -67,7 +67,7 @@ export default class ComparisonTableFunctions {
         comparisonContainer.append(table);
     }
 
-    static #appendItemModel = (idx, model, cars) => {
+    static #appendItemModel = (idx, model, car) => {
         const colorTable = document.querySelector('.comparison-table');
         const colorTableBodyRow = document.createElement('tr');
         colorTableBodyRow.className = 'comparison-table-body-row';
@@ -76,7 +76,7 @@ export default class ComparisonTableFunctions {
         const cModel = document.createElement('td');
         cModel.innerText = model;
         const cCars = document.createElement('td');
-        cCars.innerText = cars;
+        cCars.innerText = car.price;
         colorTableBodyRow.append(cIdx, cModel, cCars);
         colorTable.append(colorTableBodyRow);
     }
@@ -103,21 +103,13 @@ export default class ComparisonTableFunctions {
         })
     }
 
-    static #showMaximumPriceCar() {
-        const btn = document.querySelector('.maximum-price-car');
-        btn.addEventListener('click', () => {
-            showDataForCars('/price/max')
-        })
-    }
-
     static #models() {
         fetch('http://localhost:8080/cars/model/most_expensive')
             .then(response => response.json())
             .then(data => {
                 this.#createModelTable();
                 Object.entries(data).forEach(([model, cars], idx) => {
-                    console.log(cars)
-                    this.#appendItemModel(idx + 1, model, cars);
+                    this.#appendItemModel(idx + 1, model, cars[0]);
                 })
             })
             .catch(err => {
@@ -128,7 +120,7 @@ export default class ComparisonTableFunctions {
     static #modelsWithMaximumPrice() {
         const btn = document.querySelector('.model-most-expensive-cars');
         btn.addEventListener('click', (e) => {
-            this.models();
+            this.#models();
             e.preventDefault();
         });
     }
