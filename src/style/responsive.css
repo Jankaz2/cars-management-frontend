@@ -1,3 +1,15 @@
+@media only screen and (max-width: 1335px) {
+    .model-price-color-search,
+    .mileage-components-search,
+    .search-container button {
+        flex-direction: column;
+    }
+
+    .order-by-select-box {
+        transform: translateX(18%);
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .starter-web {
         width: 100%;
@@ -9,25 +21,6 @@
         padding: 0 2%;
     }
 }
-
-@media only screen and (max-width: 1335px) {
-    .model-price-color-search,
-    .mileage-components-search,
-    .search-container button {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 976px) {
-    .options-hamburger {
-        display: none !important;
-    }
-
-    .hamburger-nav {
-        display: none !important;
-    }
-}
-
 
 @media only screen and (max-width: 975px) {
     .top-nav ol {
@@ -58,5 +51,23 @@
 
     .stat-group {
         margin-bottom: 20px;
+    }
+
+    .order-by-select-box {
+        transform: translateX(45%);
+    }
+
+    .submit-button {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 976px) {
+    .options-hamburger {
+        display: none !important;
+    }
+
+    .hamburger-nav {
+        display: none !important;
     }
 }
