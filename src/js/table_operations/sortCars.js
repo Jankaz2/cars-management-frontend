@@ -6,20 +6,20 @@ export default class TableAnimations {
         const sortBtn = document.getElementById('sort-btn')
         const radioOrderBtnDesc = document.getElementById('desc')
         const radioOrderBtnAsc = document.getElementById('asc')
-        let sortOrderValue = true
+        let sortOrderValue = false
 
         radioOrderBtnAsc.addEventListener('click', (e) => {
             if (radioOrderBtnDesc.checked === true) {
                 radioOrderBtnAsc.checked = true
                 radioOrderBtnDesc.checked = false
-                sortOrderValue = true
+                sortOrderValue = false
             }
         })
         radioOrderBtnDesc.addEventListener('click', (e) => {
             if (radioOrderBtnAsc.checked === true) {
                 radioOrderBtnDesc.checked = true
                 radioOrderBtnAsc.checked = false
-                sortOrderValue = false
+                sortOrderValue = true
             }
         })
         sortBtn.addEventListener('click', (e) => {
