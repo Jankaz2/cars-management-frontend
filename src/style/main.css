@@ -23,6 +23,11 @@ header {
     background-attachment: fixed;
 }
 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* --- HEADINGS ---*/
 h1,
 h2,
@@ -351,7 +356,11 @@ ol li ul li a:active {
 .registry-box input[type=number],
 .registry-box input[type=email],
 .log-in-hamburger-box input[type=text],
-.log-in-hamburger-box input[type=password] {
+.log-in-hamburger-box input[type=password],
+.sign-up-hamburger-box input[type=text],
+.sign-up-hamburger-box input[type=email],
+.sign-up-hamburger-box input[type=number],
+.sign-up-hamburger-box input[type=password] {
     padding: 10px;
     border: 1px solid #201c1c;
     width: 200px;
@@ -367,7 +376,9 @@ ol li ul li a:active {
 .registry-box input[type=number]:focus,
 .registry-box input[type=email]:focus,
 .log-in-hamburger-box input[type=text]:focus,
-.log-in-hamburger-box input[type=password]:focus {
+.log-in-hamburger-box input[type=password]:focus,
+.sign-up-hamburger-box input[type=text]:focus,
+.sign-up-hamburger-box input[type=password]:focus {
     -webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
     -moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
     box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
@@ -393,15 +404,18 @@ ol li ul li a:active {
     background-color: #44bd32;
 }
 
-.log-in-hamburger-box {
+.log-in-hamburger-box,
+.sign-up-hamburger-box {
     display: none;
 }
 
-.log-in-hamburger-box a {
+.log-in-hamburger-box a,
+.sign-up-hamburger-box a {
     border: none !important;
 }
 
-.log-in-hamburger-box a:hover {
+.log-in-hamburger-box a:hover,
+.sign-up-hamburger-box a:hover {
     background-color: #fff;
     color: #000;
 }
@@ -420,6 +434,18 @@ textarea {
     color: #000 !important;
     font-size: 15px;
 }
+
+.sign-up-hamburger-box .col {
+    text-align: center;
+}
+
+.sign-up-hamburger-box .log-in-button,
+.log-in-hamburger-box .log-in-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /*--- WEB STARTER ---*/
 .starter-web {
     position: absolute;
@@ -609,20 +635,24 @@ input[type=radio]:hover {
 
 /*--- ABOUT US SECTION ---*/
 
-.section-about-us .row {
+.section-about-us {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 80px !important;
 }
 
 .section-about-us h1,
 .section-about-us h3 {
-    padding-top: 150px;
+    padding-top: 70px;
     text-align: center;
 }
 
 .section-about-us h3 {
-    padding-top: 40px;
+    padding-top: 20px;
     color: #000;
+}
+
+.section-about-us p {
+    padding-bottom: 40px;
 }
 
 /*--- SLIDER ---*/

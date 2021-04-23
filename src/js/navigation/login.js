@@ -35,6 +35,17 @@ export default class LoginBox {
             }
             e.preventDefault()
         });
+
+        const registryHamburgerBtn = document.querySelector('.sign-in-hamburger-btn')
+        const registryHamburgerBox = document.querySelector('.sign-up-hamburger-box')
+        registryHamburgerBtn.addEventListener('click', (e) => {
+            if (registryHamburgerBox.style.display === 'block') {
+                registryHamburgerBox.style.display = 'none'
+            } else {
+                registryHamburgerBox.style.display = 'block'
+            }
+            e.preventDefault()
+        })
     }
 
     static showLoginAndRegistry() {

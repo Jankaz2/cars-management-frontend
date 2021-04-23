@@ -1,6 +1,15 @@
 .row {
-   /* max-width: 1140px !important;*/
-    margin: 0 auto;
+    zoom: 1;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+
+.row:after {
+    clear:both;
 }
 
 .col {
@@ -100,4 +109,8 @@
     .span-1-of-3 {
         width: 100%;
     }
+}
+
+.box {
+    padding: 1%;
 }
