@@ -415,6 +415,11 @@ textarea {
     border: 1px solid #ccc;
 }
 
+.login-box label,
+.registry-box label {
+    color: #000 !important;
+    font-size: 15px;
+}
 /*--- WEB STARTER ---*/
 .starter-web {
     position: absolute;
