@@ -3,12 +3,18 @@ export default class HamburgerNavigation {
         const hamburgerNav = document.querySelector('.hamburger-nav');
         const hamburgerToggle = document.querySelector('.fa-bars');
         hamburgerToggle.addEventListener('click', () => {
+            console.log(hamburgerToggle.currentTarget)
             if (hamburgerNav.style.display === 'block') {
                 hamburgerNav.style.display = 'none';
             } else {
                 hamburgerNav.style.display = 'block';
             }
         });
+        document.addEventListener('mouseup', function (e) {
+            if (!hamburgerNav.contains(e.target) && !hamburgerToggle.contains(e.target)) {
+                hamburgerNav.style.display = 'none';
+            }
+        })
     }
 
     static #showOptionsHamburgerNav() {
@@ -24,18 +30,8 @@ export default class HamburgerNavigation {
         });
     }
 
-    static #turnOffHamburgerNav() {
-        const hamburgerNav = document.querySelector('.hamburger-nav');
-        document.addEventListener('mouseup', function (e) {
-            if (!hamburgerNav.contains(e.target)) {
-                hamburgerNav.style.display = 'none';
-            }
-        })
-    }
-
     static showHamburgerNavOptionsTurnOff() {
         this.#showHamburgerNav()
         this.#showOptionsHamburgerNav()
-        this.#turnOffHamburgerNav()
     }
 }
