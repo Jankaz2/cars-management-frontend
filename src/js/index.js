@@ -12,7 +12,7 @@ import TableAnimations from "./table_operations/sortCars";
 import {showDataForCars} from "./data/showData";
 import StickyNav from "./navigation/animations/stickyNav";
 import CreateStats from "./creator/createStats";
-import FilterCars from "./data/filterCarsData";
+import FilterCars from "./table_operations/filterCarsData";
 import ComparisonTableFunctions from "./creator/createComparisonTable";
 import slider from "./creator/sliderCrator";
 import DarkModeCreator from "./creator/darkModeCreator";
