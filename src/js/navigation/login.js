@@ -2,11 +2,16 @@ export default class LoginBox {
     static #showLogin() {
         const loginBtn = document.querySelector('.login-btn')
         const loginBox = document.querySelector('.login-box');
+        const registryBox = document.querySelector('.registry-box');
+        const registryHamburgerBox = document.querySelector('.sign-up-hamburger-box')
+
         loginBtn.addEventListener('click', (e) => {
             if (loginBox.style.display === 'block') {
                 loginBox.style.display = 'none'
+                registryBox.style.display = 'none'
             } else {
                 loginBox.style.display = 'block'
+                registryBox.style.display = 'none'
             }
             e.preventDefault()
         });
@@ -16,6 +21,7 @@ export default class LoginBox {
         loginHamburgerBtn.addEventListener('click', (e) => {
             if (loginHamburgerBox.style.display === 'block') {
                 loginHamburgerBox.style.display = 'none'
+                registryHamburgerBox.style.display = 'none'
             } else {
                 loginHamburgerBox.style.display = 'block'
             }
@@ -26,12 +32,16 @@ export default class LoginBox {
     static #showRegistry() {
         const registryBtn = document.querySelector('.registry-btn');
         const registryBox = document.querySelector('.registry-box');
+        const loginBox = document.querySelector('.login-box');
+        const loginHamburgerBox = document.querySelector('.log-in-hamburger-box')
 
         registryBtn.addEventListener('click', (e) => {
             if (registryBox.style.display === 'block') {
                 registryBox.style.display = 'none'
             } else {
                 registryBox.style.display = 'block'
+                loginBox.style.display = 'none'
+                loginHamburgerBox.style.display = 'none'
             }
             e.preventDefault()
         });
@@ -43,6 +53,7 @@ export default class LoginBox {
                 registryHamburgerBox.style.display = 'none'
             } else {
                 registryHamburgerBox.style.display = 'block'
+                loginHamburgerBox.style.display = 'none'
             }
             e.preventDefault()
         })

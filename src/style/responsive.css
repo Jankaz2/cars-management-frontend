@@ -39,6 +39,10 @@
         width: 100%;
         padding: 0 2%;
     }
+
+    .login-box, .registry-box {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 665px) {
