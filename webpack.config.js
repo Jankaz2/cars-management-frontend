@@ -4,10 +4,17 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const FileLoader = require('file-loader')
 
 module.exports = {
     entry: {
         index: './src/js/index.js',
+    },
+
+    devServer: {
+        port: 5757,
+        contentBase: path.resolve(__dirname, 'src'),
+        publicPath: '/src',
     },
 
     module: {
@@ -28,9 +35,7 @@ module.exports = {
             },
             {
                 test: /\.(jpg|png)$/,
-                use: {
-                    loader: 'url-loader'
-                }
+                type: 'asset/inline',
             },
             {
                 test: /\.(css|scss)$/,
@@ -57,11 +62,11 @@ module.exports = {
             filename: './css/[name].css'
         }),
 
-        new CopyWebpackPlugin({
-            patterns: [
-                {from: './src/assets', to: './assets'}
-            ]
-        })
+         new CopyWebpackPlugin({
+             patterns: [
+                 {from: './src/assets', to: './assets'}
+             ]
+         })
     ],
 
     devtool: 'source-map',
