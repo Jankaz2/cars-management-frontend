@@ -104,7 +104,7 @@ export default class ComparisonTableFunctions {
     }
 
     static #models() {
-        fetch('http://localhost:8080/cars/model/most_expensive')
+        fetch('http://localhost:8080/cars/model/most-expensive')
             .then(response => response.json())
             .then(data => {
                 this.#createModelTable();
