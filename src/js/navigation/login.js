@@ -24,6 +24,7 @@ export default class LoginBox {
                 registryHamburgerBox.style.display = 'none'
             } else {
                 loginHamburgerBox.style.display = 'block'
+                registryHamburgerBox.style.display = 'none'
             }
             e.preventDefault()
         })
