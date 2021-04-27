@@ -17,6 +17,7 @@ import ComparisonTableFunctions from "./creator/createComparisonTable";
 import slider from "./creator/sliderCrator";
 import DarkModeCreator from "./creator/darkModeCreator";
 import HamburgerNavigation from "./navigation/animations/hamburgerNav";
+import SmoothScrollToSection from "./web_animations/smoothScrolling";
 
 showDataForCars('');
 LoginBox.showLoginAndRegistry()
@@ -29,3 +30,4 @@ ComparisonTableFunctions.allComparisonFunctions()
 slider()
 DarkModeCreator.switchThemeMode()
 HamburgerNavigation.showHamburgerNavOptionsTurnOff()
+SmoothScrollToSection.scrollToSection()
