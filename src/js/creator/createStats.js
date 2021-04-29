@@ -17,7 +17,6 @@ export default class CreateStats {
     }
 
     static showStats() {
-        const statsBtn = document.querySelector('.show-stats-btn');
         fetch('http://localhost:8080/cars/statistics')
             .then(response => response.json())
             .then(stats => {
