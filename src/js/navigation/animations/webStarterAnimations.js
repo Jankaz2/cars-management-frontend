@@ -6,7 +6,7 @@ export default class Animations {
         (function animate() {
             splitted.length > 0 ? letters.innerHTML += splitted.shift() :
                 clearTimeout(running);
-            let running = setTimeout(animate, 90);
+            let running = setTimeout(animate, 45);
         })();
     }
 
