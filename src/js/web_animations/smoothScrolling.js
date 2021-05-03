@@ -1,5 +1,6 @@
 export default class SmoothScrollToSection {
     static scrollToSection() {
+        const hamburgerNav = document.querySelector('.hamburger-nav')
         document.querySelectorAll('.nav-link')
             .forEach(element => {
                 element.addEventListener('click', function (e) {
@@ -10,6 +11,7 @@ export default class SmoothScrollToSection {
                         .querySelector(id)
                         .getBoundingClientRect().top + window.pageYOffset + yOffset
                     window.scrollTo({top: y, behavior: 'smooth'})
+                    hamburgerNav.style.display = 'none'
                 })
             })
     }

@@ -3,7 +3,6 @@ export default class HamburgerNavigation {
         const hamburgerNav = document.querySelector('.hamburger-nav');
         const hamburgerToggle = document.querySelector('.fa-bars');
         hamburgerToggle.addEventListener('click', () => {
-            console.log(hamburgerToggle.currentTarget)
             if (hamburgerNav.style.display === 'block') {
                 hamburgerNav.style.display = 'none';
             } else {
