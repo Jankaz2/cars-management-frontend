@@ -12,7 +12,7 @@ module.exports = {
     },
 
     devServer: {
-        port: 5757,
+        port: 3000,
         contentBase: path.resolve(__dirname, 'src'),
         publicPath: '/src',
     },
