@@ -17,3 +17,15 @@
 ## **Setup**
 
 To run this app, open terminal and paste this command `npm run build`, then open `index.html` file from `dist` directory
+
+------------------------------------------
+
+## **Requests documentation**
+
+https://documenter.getpostman.com/view/13986101/Tz5v2vM5
+
+------------------------------------------
+
+## **Website page**
+
+http://ec2-18-196-235-164.eu-central-1.compute.amazonaws.com/
